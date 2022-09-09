@@ -11,29 +11,24 @@ export class HomePage {
   
   dolar_value;
   euro_value;
-  dolar = 5.21;
 
 
-  dolar_converter(formConverter){
+  converter(formConverter){
     let real = formConverter.value.real_value;
 
-    let dolar = 5.21;
+    let dolar = formConverter.value.dolar_quote;
+
+    let euro = formConverter.value.euro_quote;
     
-    this.dolar_value = dolar*parseFloat(real)
+    this.dolar_value = parseFloat(dolar)*parseFloat(real)
+
+    this.euro_value = parseFloat(euro)*parseFloat(real)
 
   }
 
-  euro_converter(formConverter){
-    let real = formConverter.value.real_value;
-
-    let euro = 5.22;
-    
-    this.euro_value = euro*parseFloat(real)
-  }
   clean_button(formConverter){
     this.euro_value = 0.00;
     this.dolar_value = 0.00;
-
   }
 
 }

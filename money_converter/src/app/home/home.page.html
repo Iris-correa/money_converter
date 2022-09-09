@@ -15,7 +15,7 @@
       <ion-input name="dolar_quote" ngModel></ion-input>
       <ion-button (click)="dolar_search(formConverter)">Search</ion-button>
     </ion-item>
-    
+
     <ion-item> 
       <ion-label>Euro quote:</ion-label>
       <ion-input name="euro_quote" ngModel></ion-input>
@@ -27,9 +27,7 @@
       <ion-input name="real_value" ngModel></ion-input>
     </ion-item>
 
-    <ion-button (click)="dolar_converter(formConverter)">Dolar converter</ion-button>
-
-    <ion-button (click)="euro_converter(formConverter)">Euro converter</ion-button>
+    <ion-button (click)="converter(formConverter)">To convert</ion-button>
 
     <ion-item>
       <ion-label>Dolar value: </ion-label>
