@@ -30,5 +30,10 @@ export class HomePage {
     
     this.euro_value = euro*parseFloat(real)
   }
+  clean_button(formConverter){
+    this.euro_value = 0.00;
+    this.dolar_value = 0.00;
+
+  }
 
 }
