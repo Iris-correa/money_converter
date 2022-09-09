@@ -7,14 +7,27 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <form #formConverter = "ngForm">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-item> 
+      <ion-label>Real value:</ion-label>
+      <ion-input name="real_value" ngModel></ion-input>
+    </ion-item>
+
+    <ion-button (click)="dolar_converter(formConverter)">Dolar converter</ion-button>
+
+    <ion-button (click)="euro_converter(formConverter)">Euro converter</ion-button>
+
+    <ion-item>
+      <ion-label>Dolar value: </ion-label>
+      <ion-input value="{{dolar_value}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Euro value:</ion-label>
+      <ion-input value="{{euro_value}}"></ion-input>
+    </ion-item>
+    </ion-content>
+    
+  </form>
 </ion-content>
