@@ -10,16 +10,18 @@
 
   <form #formConverter = "ngForm">
 
+    <h1>Money Converter from real to Dollar and Euro</h1>
+
     <ion-item> 
       <ion-label>Dollar quote:</ion-label>
-      <ion-input name="dolar_quote" ngModel></ion-input>
-      <ion-button (click)="dolar_search(formConverter)">Search</ion-button>
+      <ion-input name="dolar_quote" ngModel placeholder="Insert"></ion-input>
+      <a target ="_blank" href = "https://www.google.com/finance/quote/USD-BRL?sa=X&ved=2ahUKEwi_y6jnxor6AhVLqpUCHR8bDE8QmY0JegQIAhAb">Search</a>
     </ion-item>
 
     <ion-item> 
       <ion-label>Euro quote:</ion-label>
       <ion-input name="euro_quote" ngModel></ion-input>
-      <ion-button (click)="euro_search(formConverter)">Search</ion-button>
+      <a target ="_blank" href = "https://www.google.com/finance/quote/EUR-BRL?sa=X&ved=2ahUKEwisl5Whx4r6AhWvhJUCHT2FDngQmY0JegQIAhAb">Search</a>
     </ion-item>
 
     <ion-item> 
